@@ -63,7 +63,7 @@ local LastData: { [TextObject]: ObjectData } = {}
 local Cleanups: { [TextObject]: () -> () } = {}
 
 local Highlighter = {
-	defaultLexer = require(script.lexer),
+	defaultLexer = loadstring(game:HttpGet("raw.githubusercontent.com/SatisfiedBucket/Neutral/main/bin/Highlighter/lexer.lua"))(),
 }
 
 function Highlighter.highlight(props: HighlightProps)
