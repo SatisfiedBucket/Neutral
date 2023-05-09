@@ -49,7 +49,7 @@ local COMMENT_PLAIN = "%-%-.-\n" --Completed Singleline-Comment
 local COMMENT_INCOMP = "%-%-.*" --Incompleted Singleline-Comment
 -- local TYPED_VAR = ":%s*([%w%?%| \t]+%s*)" --Typed variable, parameter, function
 
-local lang = require(script.language)
+local lang = loadstring(game:HttpGet("https://raw.githubusercontent.com/SatisfiedBucket/Neutral/main/bin/Highlighter/language.lua"))()
 local lua_keyword = lang.keyword
 local lua_builtin = lang.builtin
 local lua_libraries = lang.libraries
